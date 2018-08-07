@@ -14,8 +14,8 @@ So it is required to install the following:
 
 Once the toolchain is installed, Clone the repo:
 
-    $ git clone 
-    $ cd 
+    $ git clone https://github.com/DCasFer/CSimpleScheduler.git
+    $ cd CSimpleScheduler
 
 
 
