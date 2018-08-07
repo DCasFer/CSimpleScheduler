@@ -30,10 +30,10 @@
 // ----------------------------------------------------------------------------
 
 
+#include <scheduler.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "stm32f4xx.h"
-#include "scheduler.h"
 #include "cortexm/ExceptionHandlers.h"
 
 // ----------------------------------------------------------------------------
@@ -162,7 +162,6 @@ SysTick_Handler (void)
 void __attribute__ ((section(".after_vectors"),weak))
 PendSV_Handler (void)
 {
-#if defined(DEBUG)
 	//-------------------Context switch ---------------
 
 	//Save context
@@ -184,10 +183,6 @@ PendSV_Handler (void)
 	__asm volatile ("BX 	LR"); 					//8) Return to next task
 
 
-#endif
-	 while (1)
-	{
-	}
 }
 
 
