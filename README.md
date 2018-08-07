@@ -1,4 +1,4 @@
-Simple Rust Scheduler
+Simple C/C++ Scheduler
 =====================
 
 This is a simple C/C++ scheduler for a STM32F4 Discovery board. The purpose is to schedule several simple tasks (LEDs) in a round robin manner.
